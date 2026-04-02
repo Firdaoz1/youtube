@@ -1,0 +1,139 @@
+.header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  border-bottom-width:1px ;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(228, 228, 228);
+}
+.leftsection {
+  margin-right: 70px;
+  display: flex;
+  align-items: center;
+}
+.hamburger {
+  height: 24px;
+  margin-left: 20px;
+  margin-right: 24px;
+}
+.youtube {
+  height: 20px;
+}
+.middlesection {
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.search {
+  flex: 1;
+  height: 36px;
+  width: 0;
+  font-size: 16px;
+  border: 1px solid rgb( 192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+}
+.searchicon {
+  height: 25px;
+}
+.search::placeholder {
+  font-size: 16px;
+  padding-left: 12px;
+}
+.searchb {
+  height: 40px;
+  width: 66px;
+  background-color: rgb( 240, 240, 240);
+  border: 1px solid rgb( 192, 192, 192) ;
+  margin-left: -1px;
+  margin-right: 10px;
+}
+.searchb, 
+.voicesearch, 
+.uploadcontainer, 
+.notificationcontainer,
+.box{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchb .tooltip, 
+.voicesearch .tooltip,
+.uploadcontainer .tooltip,
+.notificationcontainer .tooltip,
+.box .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0; 
+  transition: opacity, 0.15s;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.searchb:hover .tooltip, 
+.voicesearch:hover .tooltip, 
+.uploadcontainer:hover .tooltip,
+.notificationcontainer:hover .tooltip,
+.box:hover .tooltip{
+  opacity: 1;
+  }
+
+.voicesearch {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb( 248, 248, 248) ;
+}
+.voiceicon {
+  height: 24px;
+}
+.rightsection {
+  width: 180px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.upload {
+  height: 24px;
+}
+.youtubeicon {
+  height: 24px;
+}
+.notificationcontainer {
+  position: relative;
+}
+.notificationcount {
+  position: absolute;
+  top: -5px;
+  right: -4px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-size: 11px;
+  padding: 2px 5px;
+  border-radius: 8px;
+}
+.notification {
+  height: 24px;
+}
+.channellogo {
+  height: 32px;
+  border-radius: 16px;
+}
